@@ -5,13 +5,14 @@ def ubbi_dubbi():
 
 vowels ="aeiou"
 def ubdb_translate(word):
-    output =""
+    output = []
     for w in word:
         if w in vowels:
-            output = output+"ub"+w
+            output.extend(["ub",w])
         else:
-            output = output+w
-    return output
+            output.append(w)
+        
+    return ''.join(output)
 
 if __name__ == "__main__":
     ubbi_dubbi()
