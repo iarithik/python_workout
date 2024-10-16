@@ -15,5 +15,7 @@ def translate_to_pig(word):
     else:
         output = word[1: ] + word[0].lower()+"ay"
     return output
-pig_latin()
 
+
+if __name__ == "__main__":
+    pig_latin()
