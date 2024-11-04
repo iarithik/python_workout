@@ -1,3 +1,6 @@
+import _collections_abc
+import collections
+
 def most_repeating_word(*str_ip):
     count_el =0
     op_string =""
@@ -11,13 +14,15 @@ def most_repeating_word(*str_ip):
 
 def count_str(string):
     str_dict ={}
-    count = 1
-    for i in string:
-        if i in str_dict:
-            str_dict[i] = str_dict.get(i)+1
-        else:
-            str_dict.update({i:count})
+    # count = 1
+    # for i in string:
+    #     if i in str_dict:
+    #         str_dict[i] = str_dict.get(i)+1
+    #     else:
+    #         str_dict.update({i:count})
+
+    str_dict = collections.Counter(string)
     max_count = max(str_dict.values())
     return max_count
 
-most_repeating_word('this', 'is', 'an', 'elementary', 'test', 'example')
+most_repeating_word('this', 'is', 'an', 'elementary', 'test', 'example','ggggg')
