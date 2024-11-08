@@ -18,7 +18,9 @@ def restaurant():
             if check_order == 'N':
                 break
     print(f" Your final order is  {total_order} and your bill is {total_count}")
-restaurant()
+
+if __name__ == "__main__":
+    restaurant()
 
 
 

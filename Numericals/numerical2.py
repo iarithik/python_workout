@@ -5,4 +5,5 @@ def mysum(*numbers):
     print(f'sum of numbers is {output}')
     return output
 
-print(mysum(5,6,9))
+if __name__ == "__main__":
+    print(mysum(5,6,9))

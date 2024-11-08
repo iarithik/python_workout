@@ -46,4 +46,5 @@ def hex_to_int(string):
         sum += value*(16**(n-1-index))
     return(sum)
 
-hex_output()
+if __name__ == "__main__":
+    hex_output()

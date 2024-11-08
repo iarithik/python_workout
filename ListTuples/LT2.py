@@ -13,11 +13,12 @@ def mysum(*inp):
             print(f"{element} is of type {type(element)} ,Please be serious and enter correct things, whyyyy??")
     print(output)
 
-mysum('abc','def')
-mysum([1,2,3], [4,5,6])
-mysum(1,2,3)
-mysum(1.2,5.000,3.234)
-mysum({1,2,3,4,56,9})
-mysum(('sssss','iiiiiisssssssss'))
+if __name__ == "__main__":
+    mysum('abc','def')
+    mysum([1,2,3], [4,5,6])
+    mysum(1,2,3)
+    mysum(1.2,5.000,3.234)
+    mysum({1,2,3,4,56,9})
+    mysum(('sssss','iiiiiisssssssss'))
 
 #.join() is applicable to both list and tuple

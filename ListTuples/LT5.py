@@ -11,5 +11,6 @@ def check_value(num_list):
 	top_val = max(num_list,key= positive_val)
 	return top_val
 
-print(check_value(num_list))
+if __name__ == "__main__":
+	print(check_value(num_list))
 	

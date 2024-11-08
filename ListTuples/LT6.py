@@ -15,5 +15,5 @@ def format_sort_records(string_list):
                 new_string += (10-len(i))*' '                 
 
         print(new_string)
-
-format_sort_records(PEOPLE)
+if __name__ == "__main__":
+    format_sort_records(PEOPLE)

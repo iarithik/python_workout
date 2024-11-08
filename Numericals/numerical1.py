@@ -18,4 +18,5 @@ def guess_me( ):
         if counter == 3:
             print("Too bad ! Better luck next time!")
             break
-guess_me()
+if __name__ == "__main__":
+    guess_me()

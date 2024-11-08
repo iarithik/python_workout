@@ -25,4 +25,5 @@ def count_str(string):
     max_count = max(str_dict.values())
     return max_count
 
-most_repeating_word('this', 'is', 'an', 'elementary', 'test', 'example','ggggg')
+if __name__ == "__main__":
+    most_repeating_word('this', 'is', 'an', 'elementary', 'test', 'example','ggggg')

@@ -15,4 +15,5 @@ def avgrun():
         avg = float(total/counter)
         print(f'Your avg runtime is {avg}')
 
-avgrun()
+if __name__ == "__main__":
+    avgrun()
