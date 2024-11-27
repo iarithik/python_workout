@@ -12,7 +12,7 @@ def passwd_to_csv(ip_file,op_file):
     try :
         with open(ip_file,'r') as ip:
             with open(op_file,'w',newline='') as op:
-                o = csv.writer(op, delimiter='\n')
+                o = csv.writer(op, delimiter='\t')
 
                 for current_line in ip:
                     if current_line.startswith('#') or current_line.count(':') < 2:
