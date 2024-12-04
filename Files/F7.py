@@ -4,11 +4,8 @@ def reverse_file(ip_file,op_file):
             with open(op_file,'w') as op:
 
                 for current_line in ip:
-                    words = current_line.strip().split()
-                    print(words)
-                    for word in reversed(words):
-                        op.write(word[::-1]+" ")
-                    op.write('\n')
+                    op.write(f'{current_line.rstrip()[::-1]}\n')
+                    
 
     except FileNotFoundError:
         print(f"Given input file {ip_file} doesn't exist. Please enter correct file")
