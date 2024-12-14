@@ -7,4 +7,5 @@ def calculate_tax(cost,location,hour):
 
     return tax
 
-calculate_tax(500,'chico',12)
+if __name__== "__main__":
+    calculate_tax(500,'chico',12)
